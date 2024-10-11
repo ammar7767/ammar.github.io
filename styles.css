@@ -1,0 +1,185 @@
+/* تنسيق الهيدر */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق القسم الترويجي (Hero Section) */
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* تنسيق عام للأقسام */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* تنسيق شبكة الكورسات */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.course h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.course .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.course .btn:hover {
+    background-color: #0056b3;
+}
+
+/* تنسيق الفورم */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق إضافي للتجاوب مع الشاشات المختلفة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
